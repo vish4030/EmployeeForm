@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/index.css" >
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="EmpForm">
+            <h1>Employee Form using the JPDB API</h1>
+            <form>
+                <div class="row mb-3">
+                    <label for="employee" class="col-sm-2 col-form-label">Employee Id:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="employee">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="empName" class="col-sm-2 col-form-label">Employee Name:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="empName">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="salary" class="col-sm-2 col-form-label">Basic Salary:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="salary">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="hra" class="col-sm-2 col-form-label">HRA:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="hra">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="da" class="col-sm-2 col-form-label">DA:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="da">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="deduction" class="col-sm-2 col-form-label">Deducation:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="deduction">
+                    </div>
+                </div>
+                <button type="button" id="newBtn" class="btn btn-primary" onclick="newForm()">New</button>
+                <button type="button" id="saveBtn" class="btn btn-primary" onclick="saveForm()">Save</button>
+                <button type="button" id="editBtn" class="btn btn-primary" onclick="editForm()">Edit</button>
+                <button type="button" id="changeBtn" class="btn btn-primary" onclick="updateForm()">Change</button>
+                <button type="button" id="resetBtn" class="btn btn-primary" onclick="resetForm()">Reset</button>
+                <br>
+                <button type="button" id="firstBtn" class="btn btn-primary" onclick="firstRec()">First</button>
+                <button type="button" id="preBtn" class="btn btn-primary" onclick="prevRec()">Previous</button>
+                <button type="button" id="nextBtn" class="btn btn-primary" onclick="nextRec()">Next</button>
+                <button type="button" id="lastBtn" class="btn btn-primary" onclick="lastRec()">Last</button>
+            </form>
+        </div>  
+        <script src="js/index.js" type="text/javascript" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </body>
+</html>
